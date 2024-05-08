@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "zimbra-zimlet-confidential-header",
+  "description": "This Zimlet allows the user to add and view the Confidential/Sensitivity Header based on RFC2156.",
+  "version": "0.0.1",
+  "license": "BSD-3",
+  "main": "build/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "zimlet build",
+    "watch": "zimlet watch",
+    "start": "zimlet watch",
+    "package": "zimlet package --name \"$npm_package_name\" --pkg-version $npm_package_version --zimbraXVersion '^4.25.0'",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "security:audit": "npx audit-ci@^6 --moderate --report-type summary --pass-enoaudit"
+  },
+  "keywords": [
+    "zimlet",
+    "Zimbra"
+  ],
+  "devDependencies": {
+    "@zimbra/zimlet-cli": "^16.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-synacor": "^3.0.5",
+    "eslint-plugin-preact-i18n": "^1.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier-eslint": "^13.0.0"
+  },
+  "dependencies": {
+    "@zimbra/x-ui": "^5.3.0",
+    "classnames": "^2.3.1"
+  }
+}

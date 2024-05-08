@@ -1,0 +1,18 @@
+{
+  "zimbra-zimlet-confidential-header": {
+    "sensitivityBtn": "Sensitivity",
+    "sensitivityDialog": "Set sensitivity indication for this email",
+    "sensitivityOptionConfidential": "Confidential",
+    "sensitivityOptionPersonal": "Personal",
+    "sensitivityOptionPrivate": "Private",
+    "CompanyConfidential": "Please treat this email as Confidential",
+    "Personal": "Please treat this email as Personal",
+    "Private": "Please treat this email as Private",
+    "messageSent": "Message Sent",
+    "sendFail": "A failure occurred sending the message"
+  },
+  "zimlet": {
+    "description": "This Zimlet allows the user to add and view the Confidential/Sensitivity Header based on RFC2156",
+    "label": "Confidential/Sensitivity Header"
+  }
+}
